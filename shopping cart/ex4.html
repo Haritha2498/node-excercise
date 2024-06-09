@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shopping cart4</title>
+    <script src="ex4.js"></script>
+    <link rel="stylesheet" href="ex4.css">
+</head>
+<body >
+    <script>
+        let x=new Map();
+        localStorage.setItem("newmap",x)
+    </script>
+
+    <h1>SHOPPING CART</h1>
+    Select the product needed:
+    <select name="product" id="prod">
+        <option value="Apple">Apple</option>
+        <option value="Banana">Banana</option>
+        <option value="Chocolate">chocolate</option>
+        <option value="Dates">Dates</option>
+        <option value="Eggs">Eggs</option>
+
+    </select>
+    <br>
+    Enter  quantity:
+    <input type="number" id="quan">
+    <br>
+    <input type="button" id="but1" onclick="addc()" value="add to cart">
+    <br>
+    <br>
+
+    <p id="pid1"></p>
+
+
+    <p id="1"></p>
+    <p id="2"></p>
+    <p id="3"></p>
+    <p id="4"></p>
+    <p id="5"></p>
+
+    <input type="button" id="but2" onclick="viewc()" value ="view total amount">
+    <p id="pid6"></p>
+    <p id="pid7"></p>
+
+    
+    <!-- select a item to remove:
+    
+    <select name="product" id="proddel">
+        <option value="Apple">Apple</option>
+        <option value="Banana">Banana</option>
+        <option value="Chocolate">chocolate</option>
+        <option value="Dates">Dates</option>
+        <option value="Eggs">Eggs</option>
+
+    </select>
+    <input type="button" value="remove a item" onclick="del()">
+    <p id="pid8"></p> -->
+</body>
+</html>

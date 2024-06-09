@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="ex2.js"></script>
+</head>
+<body style="text-align: center;font-size: 22px;">
+    <h3>RECIPE FINDER</h3>
+    Enter the core ingredient you have:
+    <br> <br>
+    <select name="core" id="ingre" on>
+        <option value="chicken">chicken</option>
+        <option value="potato">potato</option>
+        <option value="mushroom">mushroom</option>
+    </select>
+    <br> <br>
+    <input type="button" value="Find recipe" onclick="findrecipe()">
+    <p id="pid1"> </p>
+    <br> <br>
+
+    <input type="button" value="Add to favorites" onclick="addfav()">
+    <br><p id="pid2"></p> <br>
+    <input type="button" value="view favorites" onclick="viewfavfun()">
+    <p id="pid3"></p>
+    <input type="button" value="clear favorites" onclick="clearfav()">
+    <p id="pid4"></p>
+    <input type="text" id="addcore" placeholder="enter core ingredient">
+    <input type="text" id="addname" placeholder="enter name of recipe">
+    <input type="text" id="addres" placeholder="enter recipe">
+    <br>
+    <input type="button" value="add a recipe" onclick="addrec()">
+    <p id="pid5"></p>
+    <br>
+    <input type="button" onclick="funcc()" value="new recipe list">
+    <p id="1"></p>
+    <p id="2"></p>
+    <p id="3"></p>
+    <p id="4"></p>
+    <p id="5"></p>
+</body>
+</html>
